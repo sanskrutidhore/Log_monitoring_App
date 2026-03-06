@@ -1,4 +1,4 @@
-FROM python 3.11
+FROM python:3.11
 WORKDIR /D:/Sanskruti/Log_Monitoring_Microservice
 COPY . . 
 RUN pip install -r requirement.txt

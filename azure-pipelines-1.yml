@@ -1,0 +1,13 @@
+trigger:
+- main
+
+pool:
+  name: SelfHostedPool
+  
+steps:
+
+- script: pip install  -r requirements.txt
+  displayName: Install dependencies
+  
+- script: docker build -t log-monitor .
+  displayName: Build Docker Image
